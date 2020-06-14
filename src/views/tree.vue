@@ -10,13 +10,13 @@ export default {
     return{
       id:random(),
       tree:{},
-      rootTop:400,//樹根位置
+      rootTop:300,//樹根位置
       treeColor:'#cccccc',
-      maxTree:20, //樹枝的執行步數
+      maxTree:18, //樹枝的執行步數
     }
   },
   mounted(){
-    this.init()
+    // this.init()
   },
   methods:{
     init(){
@@ -35,8 +35,8 @@ export default {
     },
     async initParams(){
       this.tree = document.getElementById(this.id);
-      this.tree.width = window.innerWidth;
-      this.tree.height = window.innerHeight;
+      this.tree.width = 300;
+      this.tree.height = 450;
       this.tCtx = this.tree.getContext("2d");
       return this.tCtx
     },
@@ -66,9 +66,9 @@ export default {
 </script>
 <style scoped>
   .tree{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 24.5vh;
     position: absolute;
-    border: 1px solid blue
+    /* border: 1px solid blue */
   }
 </style>

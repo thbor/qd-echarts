@@ -6,6 +6,8 @@
 import { random } from "../../plugins/utils";
 import echarts from "echarts";
 
+import 'echarts/map/js/china.js'
+
 export default {
   data() {
     return {
